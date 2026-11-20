@@ -23,8 +23,8 @@ export default defineConfig({
     copyPublicDir: false,
     rollupOptions: {
       input: {
-        mapping: resolve(repositoryRoot, 'frontend', 'index.html'),
-        modelView: resolve(repositoryRoot, 'frontend', 'model-view.html')
+        modelView: resolve(repositoryRoot, 'frontend', 'index.html'),
+        mapping: resolve(repositoryRoot, 'frontend', 'asset-mapping.html')
       },
       output: {
         entryFileNames: 'assets/[name]-[hash].js',
